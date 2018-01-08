@@ -1,0 +1,10 @@
+dist
+node_modules
+yarn.lock
+npm-debug.log
+.idea
+.DS_Store
+.AppleDouble
+.LSOverride
+*.ipr
+*.iws

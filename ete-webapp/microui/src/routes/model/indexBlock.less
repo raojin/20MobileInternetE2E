@@ -1,0 +1,73 @@
+@import "common";
+
+:global{
+  .p-b2-div{
+    position: relative;
+    margin: 20px;
+    width: 100%;
+    height: 180px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    .img{
+      margin: 0 20px;
+      width: calc(~"50% - (20px * 2)") !important;
+      height: 100%;
+    }
+    .p-img-1{
+      background: url("@{image}IOT-ico1.png") left no-repeat;
+    }
+    .p-img-2{
+      background: url("@{image}IOT-ico2.png") left no-repeat;
+    }
+    .p-title{
+      width: 90px;
+      height: 30px;
+      text-align: center;
+      line-height: 28px;
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      left: 50%;
+      top: -15px;
+      z-index: 2;
+      margin: 0 0 0 -45px;
+      border-radius: 30px;
+      background-color: #9565de;
+    }
+    .p-content{
+      width: 50%;
+      height: 100%;
+      float: left;
+
+      .p-top{
+        height: 80%;
+      }
+      .p-top>div{
+        margin-top: 20px;
+        width: 50%;
+        height: calc(~"100% - 20px");
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+      }
+      p{text-align: center;}
+      p>span{
+        display: inline-block;
+        margin: 0 20px;
+        font-size: 13px;
+      }
+    }
+  }
+  .p-b2-div.t2{
+    .p-img-1{
+      background-image: url("@{image}/IOT-ico3.png");
+    }
+    .p-img-2{
+      background-image: url("@{image}/IOT-ico4.png");
+    }
+    .p-title{
+      background-color: #89d042;
+    }
+  }
+}
